@@ -1,0 +1,108 @@
+body{
+    background-color: white;
+    color: black;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.contianer.one{
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    transform: translateY(-50%)
+}
+
+.line{
+    font-size: 28px;
+    opacity: 0;
+    margin: 12px 0;
+    animation: fadeIn 2s ease forwards;
+}
+
+.simple{
+    animation-delay: 0.5s;
+}
+
+.over{
+    animation-delay: 2s;
+}
+
+.begun{
+    animation-delay: 3.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.container.two {
+    position: absolute;
+    top: 75%;
+    text-align: center;
+    opacity: 0;
+    animation: fadeContainer 1s ease forwards;
+    animation-delay: 6s; 
+}
+
+@keyframes fadeContainer {
+    to {
+        opacity: 1;
+    }
+}
+
+
+ .green {
+    color: #6fc276; 
+    font-size: 22px;
+    animation: floatIn 2s ease forwards;
+    animation-delay: 6.5s;
+    opacity: 0;
+}
+
+
+@keyframes floatIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.still.link {
+    color: #006400; 
+    text-shadow: 0 0 10px #B9FF66, 0 0 20px #B9FF66;
+    font-size: 28px;
+    animation: glowIn 2s ease-in-out forwards;
+    animation-delay: 8s;
+    opacity: 0;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.still.link:hover{
+    transform: scale(1.2);
+    text-shadow: 0 0 15px whitesmoke, 0 0 25px whitesmoke;
+    color:#006400
+}
+
+
+@keyframes glowIn {
+    0% { opacity: 0; transform: scale(0.95); }
+    50% { opacity: 1; transform: scale(1.05); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+
