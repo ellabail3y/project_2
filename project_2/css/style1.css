@@ -1,0 +1,55 @@
+body {
+    background-color: #FAF9F6;
+    color: black;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+}
+
+
+.poem-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.line {
+    font-size: 2rem;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black; 
+    width: 0; 
+}
+
+
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+
+.typewriter { animation: typewriter 2s steps(20, end) forwards; }
+.delay-1 { animation: typewriter 2s steps(20, end) forwards; animation-delay: 2s; }
+.delay-2 { animation: typewriter 2s steps(20, end) forwards; animation-delay: 4s; }
+.delay-3 { animation: typewriter 2s steps(20, end) forwards; animation-delay: 6s; }
+.delay-4 { animation: typewriter 2s steps(20, end) forwards; animation-delay: 8s; }
+
+
+
+.clickable {
+    color: #ff5733;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.clickable:hover {
+    color: #ff2200;
+}
